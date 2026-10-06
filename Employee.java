@@ -42,7 +42,7 @@ public class Employee {
     
     public double applyBonus(double percentage, double maxBonus) { // Extended the overloaded method to include a max bonus, so that the bonus cannot go passt the specificed value.
     double pay = calculatePay();
-    double bonus = pay * percentage;
+    double bonus = pay * percentage; // Copilot fixed the issues here because it was not calculating the bonus correctly.
 
     if (bonus > maxBonus) {
         bonus = maxBonus;

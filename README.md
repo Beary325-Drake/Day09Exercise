@@ -2,7 +2,8 @@ Tim Dvorak Assignment #7
     Code taken from Day09 Excercise
 
 Learning from the article
-- 
+- Polymorphism through inheritance was one of the easiest way for me to grasp polymorphism because it's similar to creating a family tree, and I really like those. Inheritance shows that you can bring aspects from the parent class into the child class, which is how overriding works, you essentially grab information from the parent, and then make it into something for the child to use, overriding it for optimization in the child class.
+
 
 Changes Made:
 - Edited Driver to ask for input regarding employees
