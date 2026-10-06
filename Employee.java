@@ -39,7 +39,19 @@ public class Employee {
         double bonus = tier.equalsIgnoreCase("high") ? 2000.0 : 750.0;
         return calculatePay() + bonus;
     }
+    
+    public double applyBonus(double percentage, double maxBonus) { // Extended the overloaded method to include a max bonus, so that the bonus cannot go passt the specificed value.
+    double pay = calculatePay();
+    double bonus = pay * percentage;
 
+    if (bonus > maxBonus) {
+        bonus = maxBonus;
+    }
+
+    return pay + bonus;
+}
+
+    @Override // override tostring so that it displays the worker and their salary
     public String toString() {
         return name + " earns $" + calculatePay();
     }

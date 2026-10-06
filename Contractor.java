@@ -12,6 +12,7 @@ public class Contractor extends Employee {
         this.hoursWorked = hoursWorked;
     }
 
+    @Override // override calclulate pay so it pulls hourly rate and hours worked
     public double calculatePay() {
         return hourlyRate * hoursWorked;
     }

@@ -10,6 +10,7 @@ public class Manager extends Employee {
         this.stipend = stipend;
     }
 
+    @Override // override so it gets base salary and then adds the stipend
     public double calculatePay() {
         return getBaseSalary() + stipend;
     }
